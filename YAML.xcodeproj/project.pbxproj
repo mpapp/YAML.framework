@@ -29,7 +29,7 @@
 		EB6C422C124D9A4B00886AD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C3FB9124D872600886AD1 /* Foundation.framework */; };
 		EB6C4252124D9B4A00886AD1 /* yaml in Copy YAML Files */ = {isa = PBXBuildFile; fileRef = EB6C424F124D9B3E00886AD1 /* yaml */; };
 		EB6C433C124E0CF600886AD1 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6C4226124D9A1700886AD1 /* test.m */; };
-		EB8C1AB014B795CC00BCDC1A /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; };
+		EB8C1AB014B795CC00BCDC1A /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB8C1ABA14B795E200BCDC1A /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB114B795E200BCDC1A /* api.c */; };
 		EB8C1ABB14B795E200BCDC1A /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB214B795E200BCDC1A /* dumper.c */; };
 		EB8C1ABC14B795E200BCDC1A /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB314B795E200BCDC1A /* emitter.c */; };
@@ -363,7 +363,7 @@
 			name = YAMLUnitTests;
 			productName = YAMLUnitTests;
 			productReference = D319EEA613E5EE2A000EB46D /* YAMLUnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		EB2B5927124E2100001FFEEB /* events */ = {
 			isa = PBXNativeTarget;

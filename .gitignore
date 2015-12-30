@@ -5,3 +5,4 @@ build
 *.xccheckout
 xcuserdata
 test/yaml/bigboy.yaml
+Carthage/Build

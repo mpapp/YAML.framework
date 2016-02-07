@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FDED0601C6786BC00769001 /* YAML-Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FDED05F1C6786BC00769001 /* YAML-Framework.h */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		D319EEA813E5EE2A000EB46D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA713E5EE2A000EB46D /* SenTestingKit.framework */; };
 		D319EEAA13E5EE2A000EB46D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA913E5EE2A000EB46D /* Cocoa.framework */; };
@@ -104,6 +105,7 @@
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* YAML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAML_Prefix.pch; sourceTree = "<group>"; };
+		5FDED05F1C6786BC00769001 /* YAML-Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YAML-Framework.h"; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* YAML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YAML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D319EEA613E5EE2A000EB46D /* YAMLUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAMLUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 		0867D691FE84028FC02AAC07 /* YAML */ = {
 			isa = PBXGroup;
 			children = (
+				5FDED05F1C6786BC00769001 /* YAML-Framework.h */,
 				EB6C4222124D9A0200886AD1 /* test */,
 				EB8C1AAE14B794F000BCDC1A /* yaml-0.1.4 */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -318,6 +321,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDED0601C6786BC00769001 /* YAML-Framework.h in Headers */,
 				EBF83D8B124D7A3E008517E5 /* YAMLSerialization.h in Headers */,
 				EB8C1AB014B795CC00BCDC1A /* yaml.h in Headers */,
 				EB8C1AC214B795E200BCDC1A /* yaml_private.h in Headers */,
@@ -587,6 +591,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -599,6 +604,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;
@@ -613,6 +619,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -623,6 +630,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;
@@ -675,6 +683,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -687,6 +696,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;
@@ -803,6 +813,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -815,6 +826,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;
@@ -928,6 +940,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -938,6 +951,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;
@@ -1047,6 +1061,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1059,6 +1074,7 @@
 				GCC_PREFIX_HEADER = YAML_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MODULEMAP_FILE = Modules/YAML.modulemap;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = YAML;

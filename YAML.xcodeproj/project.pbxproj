@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FDED0601C6786BC00769001 /* YAML-Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FDED05F1C6786BC00769001 /* YAML-Framework.h */; };
+		5FDED0601C6786BC00769001 /* YAML-Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FDED05F1C6786BC00769001 /* YAML-Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		D319EEA813E5EE2A000EB46D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA713E5EE2A000EB46D /* SenTestingKit.framework */; };
 		D319EEAA13E5EE2A000EB46D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA913E5EE2A000EB46D /* Cocoa.framework */; };
